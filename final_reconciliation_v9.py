@@ -2,8 +2,8 @@ import openpyxl
 from openpyxl.styles import PatternFill
 import re
 
-sample_file = 'excel_workspace/항공권 정산/항공권 결제내역 정산(04월분)_sample.xlsx'
-output_file = 'excel_workspace/항공권 정산/항공권 결제내역 정산(04월분)_최종_정밀완성_v9.xlsx'
+sample_file = 'excel_workspace/항공권 정산/항공권 결제내역 정산_input.xlsx'
+output_file = 'excel_workspace/항공권 정산/항공권 결제내역 정산_output.xlsx'
 
 def normalize_no(val):
     if val is None: return ""
