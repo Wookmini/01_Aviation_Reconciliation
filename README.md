@@ -19,7 +19,7 @@
 - **Yellow (Missing)**: 한쪽 리스트에는 존재하나 대응되는 항목이 없는 경우입니다. 누락된 영수증이나 미처리된 결제 내역을 식별하여 정산 누락을 방지합니다.
 
 ## 프로젝트 구조
-- `final_reconciliation.py`: 메인 정산 및 대조 로직 스크립트 (v9 탑재)
+- `run_reconciliation.py`: 메인 정산 및 대조 로직 스크립트 (최종 버전)
 - `analyze_excel.py`: 엑셀 파일 구조 분석 및 전처리 유틸리티
 - `check_rows.py`: 데이터 행 수 및 기본 무결성 검사
 - `excel_workspace/`: 정산에 필요한 데이터 파일 보관
@@ -27,7 +27,7 @@
 ## 시작하기
 ```bash
 pip install pandas openpyxl
-python final_reconciliation.py
+python run_reconciliation.py
 ```
 
 ---
