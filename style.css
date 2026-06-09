@@ -220,6 +220,122 @@ body {
     margin: 32px 0;
 }
 
+/* Claude Style Sleek Dark Cards & Alerts */
+.claude-card {
+    background: rgba(30, 41, 59, 0.6); /* Deep Slate Gray */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(12px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.claude-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.claude-card h3, .claude-card h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #F8FAFC; /* Crisp Off-white */
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.claude-card ul {
+    margin-bottom: 0;
+}
+
+.claude-card li, .claude-card p {
+    color: #CBD5E1; /* Slate 300 - high readability */
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.claude-card li strong, .claude-card p strong {
+    color: #F1F5F9;
+    font-weight: 600;
+}
+
+/* Card Variants */
+.logic-card {
+    border-left: 4px solid #818CF8; /* Soft Indigo */
+}
+
+.success-card {
+    border-left: 4px solid #34D399; /* Soft Emerald */
+    background: rgba(6, 78, 59, 0.4);
+}
+
+.claude-alert {
+    padding: 20px 24px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+}
+
+.claude-alert.error-alert {
+    background: rgba(127, 29, 29, 0.4); /* Dark Red */
+    border-left: 4px solid #F87171;
+}
+
+.claude-alert.warning-alert {
+    background: rgba(120, 53, 15, 0.4); /* Dark Amber */
+    border-left: 4px solid #FBBF24;
+}
+
+.claude-alert strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #F8FAFC;
+    font-weight: 600;
+}
+
+.claude-alert p {
+    margin-bottom: 0;
+    color: #E2E8F0;
+    line-height: 1.7;
+}
+
+/* Tables */
+.markdown-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.markdown-body th, .markdown-body td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--glass-border);
+    text-align: left;
+    line-height: 1.5;
+}
+
+.markdown-body th {
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+    color: #93C5FD;
+    font-size: 1.1rem;
+}
+
+.markdown-body tr:last-child td {
+    border-bottom: none;
+}
+
+.markdown-body tr:hover td {
+    background: rgba(255, 255, 255, 0.08);
+}
+
 /* Media (Images & Videos) */
 .markdown-body img,
 .markdown-body video,
